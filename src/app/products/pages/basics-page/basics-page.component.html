@@ -1,5 +1,4 @@
 <p-panel header="Pipes Básicos" class="p-1">
-    <h1>Pipes Básicos</h1>
     <p>
         Pipes incluídos en Angular - Usualmente en el Common Module
     </p>
@@ -39,8 +38,12 @@
 
             <hr>
             <ol>
-                <li> fecha | date:'long': 'GMT-6' </li>
-                <li> fecha | date:'long': 'GMT-4' </li>
+                <li>fecha | date:'long': 'GMT-6' </li>
+                <li>fecha | date:'long': 'GMT-4' </li>
+                <li>fecha | date:'long':'':'es-ES' </li>
+                <li>fecha | date:'long':'':'fr-CA' </li>
+                <li>fecha | date:'long':'':'en-US' </li>
+
             </ol>
 
         </p-card>
@@ -60,8 +63,11 @@
 
             <hr>
             <ol>
-                <li> {{ customDate | date:'long': 'GMT-6' }} </li>
-                <li> {{ customDate | date:'long': 'GMT-4' }} </li>
+                <li>{{ customDate | date:'long': 'GMT-6' }} </li>
+                <li>{{ customDate | date:'long': 'GMT-4' }} </li>
+                <li>{{ customDate | date:'long':'':'es' }}</li>
+                <li>{{ customDate | date:'long':'':'fr-CA' }}</li>
+                <li>{{ customDate | date:'long':'':'en-US' }}</li>
             </ol>
 
         </p-card>
