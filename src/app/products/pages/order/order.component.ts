@@ -12,6 +12,7 @@ import { CanFly } from '../../pipes/can-fly.pipe';
 })
 export class OrderComponent {
   public isUpperCase: boolean = false;
+  public orderBy?: keyof Hero;
 
   public heroes: Hero[] = [
     {
@@ -44,4 +45,8 @@ export class OrderComponent {
   toogleUppercase(): void {
     this.isUpperCase = !this.isUpperCase;
   };
+
+  changeOrder( value: keyof Hero ) {
+    this.orderBy = value;
+  }
 }
